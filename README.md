@@ -37,7 +37,7 @@ A modern React application that simulates Liverpool's product browsing experienc
 ```bash
 # Clone the repository
 git clone <repository-url>
-cd prueba-tecnica-frontend
+cd Liverpool-frontend
 
 # Install dependencies
 npm install
