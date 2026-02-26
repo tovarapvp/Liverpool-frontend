@@ -1,0 +1,317 @@
+.form-page {
+    padding: 100px 24px 40px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.form-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #fff 0%, rgba(255, 255, 255, 0.7) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0 0 8px;
+}
+
+.form-subtitle {
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 1.05rem;
+    margin: 0;
+}
+
+.dynamic-form {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.75);
+    letter-spacing: 0.3px;
+}
+
+.required-star {
+    color: #e91e8c;
+}
+
+.form-input {
+    padding: 14px 16px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    color: #fff;
+    font-size: 1rem;
+    font-family: inherit;
+    outline: none;
+    transition: all 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-input::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.form-input:focus {
+    border-color: rgba(233, 30, 140, 0.5);
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 20px rgba(233, 30, 140, 0.1);
+}
+
+.form-input.input-error {
+    border-color: rgba(255, 82, 82, 0.6);
+    background: rgba(255, 82, 82, 0.05);
+}
+
+select.form-input {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='rgba(255,255,255,0.5)' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    padding-right: 40px;
+}
+
+select.form-input option {
+    background: #1a1a2e;
+    color: #fff;
+}
+
+textarea.form-input {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 0;
+}
+
+.checkbox-input {
+    width: 20px;
+    height: 20px;
+    accent-color: #e91e8c;
+    cursor: pointer;
+}
+
+.checkbox-label {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.75);
+    cursor: pointer;
+}
+
+.field-error {
+    font-size: 0.8rem;
+    color: #ff8a80;
+    padding-left: 4px;
+    animation: shakeIn 0.3s ease;
+}
+
+@keyframes shakeIn {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-4px);
+    }
+
+    75% {
+        transform: translateX(4px);
+    }
+}
+
+.form-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.submit-btn {
+    flex: 1;
+    padding: 16px 32px;
+    background: linear-gradient(135deg, #e91e8c, #b644d0);
+    border: none;
+    border-radius: 14px;
+    color: #fff;
+    font-size: 1.05rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(233, 30, 140, 0.35);
+}
+
+.reset-btn {
+    padding: 16px 28px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    font-family: inherit;
+}
+
+.reset-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+/* Success state */
+.success-card {
+    text-align: center;
+    padding: 60px 40px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    animation: fadeIn 0.5s ease;
+}
+
+.success-icon {
+    font-size: 4rem;
+    margin-bottom: 16px;
+}
+
+.success-card h2 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin: 0 0 8px;
+}
+
+.success-card>p {
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0 0 32px;
+}
+
+.submitted-data {
+    text-align: left;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 14px;
+    padding: 20px 24px;
+    margin-bottom: 24px;
+}
+
+.submitted-data h3 {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0 12px;
+}
+
+.data-row {
+    display: flex;
+    gap: 12px;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.data-row:last-child {
+    border-bottom: none;
+}
+
+.data-key {
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.6);
+    min-width: 120px;
+}
+
+.data-value {
+    color: #fff;
+    word-break: break-all;
+}
+
+.retry-btn {
+    padding: 14px 28px;
+    background: linear-gradient(135deg, #e91e8c, #b644d0);
+    border: none;
+    border-radius: 14px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.retry-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(233, 30, 140, 0.35);
+}
+
+/* Error state */
+.form-error {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.error-icon-large {
+    font-size: 4rem;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.form-error h2 {
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0 0 8px;
+}
+
+.form-error p {
+    color: rgba(255, 255, 255, 0.4);
+    margin: 0 0 24px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+    .dynamic-form {
+        padding: 24px;
+    }
+
+    .form-title {
+        font-size: 1.8rem;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+}
